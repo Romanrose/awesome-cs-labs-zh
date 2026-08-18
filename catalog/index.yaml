@@ -1176,3 +1176,85 @@
   outputs: [RISC-V programs, cache and parallel-programming labs, CPU and machine-structure projects]
   status: active
   checked: 2026-08-18
+
+- id: nju-network-protocol-lab
+  title: 南京大学计算机网络协议开发实验
+  subject: network
+  institution: Nanjing University
+  kind: lab
+  level: advanced
+  languages: [C, Shell]
+  platforms: [Linux, TCP/IP, packet capture]
+  url: https://sbc.nju.edu.cn/syjxdg/jsjkxyjsx/20150127/i2273.html
+  source_access: course-provided
+  environment: [Linux C/S environment, C compiler, socket APIs, packet-sniffing tools]
+  verification: [complete application, transport, network and link-layer protocol exercises, then test the client-server programs]
+  outputs: [TCP/IP protocol components, socket programs, packet-analysis records]
+  status: archived
+  checked: 2026-08-18
+
+- id: sjtu-computer-networks
+  title: 上海交通大学 Computer Networks
+  subject: network
+  institution: Shanghai Jiao Tong University
+  kind: course
+  level: undergraduate
+  languages: [C, Python]
+  platforms: [Linux, TCP/IP, packet capture]
+  url: https://jhc.sjtu.edu.cn/courses/2021/1111/35.html
+  source_access: course-provided
+  environment: [Linux or course environment, socket programming toolchain, packet-analysis tools]
+  verification: [complete the course experiments and network-programming assignments, inspect protocol behavior]
+  outputs: [protocol analysis, network programming exercises and experiment reports]
+  status: archived
+  checked: 2026-08-18
+
+- id: cmu-15441-networking
+  title: CMU 15-441/641 Networking and the Internet
+  subject: network
+  institution: Carnegie Mellon University
+  kind: lab
+  level: advanced
+  languages: [C, C++, Python, Lua]
+  platforms: [Linux, Docker, Vagrant, AWS optional, Wireshark]
+  url: https://computer-networks.github.io/fa22/
+  source_access: public
+  source_url: https://github.com/computer-networks/cmu-tcp
+  environment: [Linux, C/C++ toolchain, CMake, Docker or Vagrant, packet-capture tools]
+  verification: [run the Mixnet, TCP and HTTP project tests, capture packets and inspect protocol behavior]
+  outputs: [network simulator, TCP implementation, HTTP service and packet traces]
+  status: seasonal
+  checked: 2026-08-18
+
+- id: eth-mini-internet
+  title: ETH Zurich Mini-Internet 网络实验
+  subject: network
+  institution: ETH Zurich
+  kind: lab
+  level: advanced
+  languages: [Python, Shell, Perl]
+  platforms: [Linux, Docker, FRRouting, BGP, IPv6]
+  url: https://github.com/nsg-ethz/mini_internet_project
+  source_access: public
+  source_url: https://github.com/nsg-ethz/mini_internet_project
+  environment: [Linux host, Docker, router containers, FRRouting and configuration files]
+  verification: [build a mini-Internet, configure an autonomous system, establish end-to-end connectivity and inspect the connectivity matrix]
+  outputs: [virtual routers, AS topology, BGP/RPKI/MPLS exercises and network-operation reports]
+  status: active
+  checked: 2026-08-18
+
+- id: gatech-cs6250
+  title: Georgia Tech CS6250 Computer Networks
+  subject: network
+  institution: Georgia Institute of Technology
+  kind: lab
+  level: advanced
+  languages: [Python]
+  platforms: [Linux VM, Mininet, SDN, Wireshark]
+  url: https://omscs.gatech.edu/cs-6250-computer-networks
+  source_access: course-provided
+  environment: [course virtual machine, Python, Mininet, SDN tools and packet-analysis utilities]
+  verification: [complete spanning-tree, distance-vector, SDN firewall and BGP-hijacking projects in the course VM]
+  outputs: [routing algorithms, virtual network topologies, SDN firewall and BGP experiments]
+  status: active
+  checked: 2026-08-18
