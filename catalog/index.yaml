@@ -1014,3 +1014,165 @@
   outputs: [MPI programs, point-to-point and collective communication exercises]
   status: active
   checked: 2026-08-18
+
+- id: stanford-cs143
+  title: Stanford CS143 编译器课程项目
+  subject: compiler
+  institution: Stanford University
+  kind: lab
+  level: advanced
+  languages: [C++, MIPS Assembly]
+  platforms: [Linux, Flex, Bison, SPIM]
+  url: https://web.stanford.edu/class/cs143/
+  source_access: course-provided
+  environment: [Linux or Stanford Myth environment, C++ compiler, Flex, Bison, SPIM]
+  verification: [build the Cool compiler stages, run supplied test cases, submit cleanly compiling assignments]
+  outputs: [lexer, parser, semantic analyzer, code generator and complete Cool compiler]
+  status: active
+  checked: 2026-08-18
+
+- id: berkeley-cs186
+  title: UC Berkeley CS186 数据库系统实验
+  subject: database
+  institution: University of California, Berkeley
+  kind: lab
+  level: advanced
+  languages: [Java, SQL]
+  platforms: [Linux, Java, Gradle]
+  url: https://cs186berkeley.net/
+  source_access: public
+  source_url: https://github.com/berkeley-cs186/sp26-rookiedb
+  environment: [Java development kit, Gradle, course RookieDB skeleton and tests]
+  verification: [run the project tests for storage, indexing, query processing, recovery and concurrency]
+  outputs: [educational DBMS, B+ tree, query engine, locking and recovery components]
+  status: active
+  checked: 2026-08-18
+
+- id: seed-security-labs
+  title: SEED Security Labs
+  subject: security
+  institution: Syracuse University and SEED Labs community
+  kind: lab
+  level: undergraduate
+  languages: [C, Python, Shell, Java]
+  platforms: [Linux, Docker, SEEDUbuntu, isolated network]
+  url: https://seedsecuritylabs.org/
+  source_access: course-provided
+  environment: [SEEDUbuntu virtual machine or Docker images, local isolated network, lab handouts]
+  verification: [run each authorized lab in the isolated environment and capture the expected security observation]
+  outputs: [network attacks and defenses, web security, cryptography, malware and system-security reports]
+  status: active
+  checked: 2026-08-18
+  safety_note: Only use the supplied isolated environment, local targets or systems with explicit authorization.
+
+- id: berkeley-cs188
+  title: UC Berkeley CS188 人工智能项目
+  subject: ai
+  institution: University of California, Berkeley
+  kind: lab
+  level: undergraduate
+  languages: [Python]
+  platforms: [Linux, Python, Gradescope]
+  url: https://inst.eecs.berkeley.edu/~cs188/sp26/
+  source_access: course-provided
+  environment: [Python, course Pacman project framework, Gradescope or local autograder]
+  verification: [run the project autograder for search, multi-agent, reinforcement learning, Bayes nets and machine learning]
+  outputs: [Pacman agents, search algorithms, reinforcement-learning and probabilistic-inference implementations]
+  status: active
+  checked: 2026-08-18
+
+- id: mit-6031
+  title: MIT 6.031 软件构造项目
+  subject: software-engineering
+  institution: Massachusetts Institute of Technology
+  kind: course
+  level: undergraduate
+  languages: [TypeScript, JavaScript]
+  platforms: [Linux, macOS, Node.js, Git]
+  url: https://web.mit.edu/6.031/www/fa21/
+  source_access: course-provided
+  environment: [Node.js and TypeScript toolchain, Git, VS Code or compatible editor]
+  verification: [complete problem sets, run tests and code review checks, deliver the Star Battle project]
+  outputs: [tested TypeScript programs, specifications, code reviews, concurrency and networking project]
+  status: archived
+  checked: 2026-08-18
+
+- id: stanford-cs148
+  title: Stanford CS148 图形学课程项目
+  subject: graphics
+  institution: Stanford University
+  kind: course
+  level: undergraduate
+  languages: [Python, GLSL]
+  platforms: [Linux, macOS, Blender, OpenGL]
+  url: https://web.stanford.edu/class/cs148/index.html
+  source_access: course-provided
+  environment: [Python, Blender, OpenGL-capable workstation, course assignment framework]
+  verification: [complete rendering homework and final project, inspect rendered images and technical report]
+  outputs: [rasterization, shading, geometry, ray tracing and imaging project]
+  status: active
+  checked: 2026-08-18
+
+- id: stanford-cs107
+  title: Stanford CS107 系统编程实验
+  subject: systems
+  institution: Stanford University
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly, Python]
+  platforms: [Linux, x86-64, GDB, Valgrind]
+  url: https://web.stanford.edu/class/cs107/labs.html
+  source_access: course-provided
+  environment: [Linux or Stanford Myth environment, GCC, GDB, Valgrind, Callgrind]
+  verification: [complete the C, pointer, heap and security assignments, run the supplied tests and profiling tools]
+  outputs: [C systems programs, memory allocator, x86-64 analysis and security exercises]
+  status: active
+  checked: 2026-08-18
+
+- id: uw-cse451
+  title: University of Washington CSE451 操作系统实验
+  subject: os
+  institution: University of Washington
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly]
+  platforms: [Linux, xv6-derived kernel, autograder]
+  url: https://courses.cs.washington.edu/courses/cse451/26wi/
+  source_access: course-provided
+  environment: [64-bit Linux, course xk kernel, C toolchain and autograder]
+  verification: [extend the kernel with protected calls, multiprocessing, paging and crash-resilient file systems, then pass autograding]
+  outputs: [xv6-derived teaching kernel, design documents and lab implementation]
+  status: active
+  checked: 2026-08-18
+
+- id: mit-6004-computation-structures
+  title: MIT 6.004 Computation Structures
+  subject: architecture
+  institution: Massachusetts Institute of Technology
+  kind: lab
+  level: undergraduate
+  languages: [BSV, Assembly]
+  platforms: [Browser, digital-system simulator]
+  url: https://computationstructures.org/
+  source_access: course-provided
+  environment: [browser-based lab tools, course worksheets and digital-system simulator]
+  verification: [complete interactive circuit exercises and design a gate-level RISC processor]
+  outputs: [logic circuits, finite-state machines, processor design and system simulations]
+  status: active
+  checked: 2026-08-18
+
+- id: berkeley-cs61c
+  title: UC Berkeley CS61C 机器结构实验
+  subject: architecture
+  institution: University of California, Berkeley
+  kind: lab
+  level: undergraduate
+  languages: [C, RISC-V Assembly, Python]
+  platforms: [Linux, RISC-V, Venus, FPGA optional]
+  url: https://cs61c.org/sp26/
+  source_access: course-provided
+  environment: [course instructional account, C toolchain, RISC-V simulator and lab servers]
+  verification: [run lab and project tests for C, assembly, caches, parallelism and CPU design]
+  outputs: [RISC-V programs, cache and parallel-programming labs, CPU and machine-structure projects]
+  status: active
+  checked: 2026-08-18
