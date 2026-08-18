@@ -798,3 +798,219 @@
   outputs: [API chat, document comparison, tool use, code-execution demos]
   status: active
   checked: 2026-08-18
+
+- id: usaco-guide
+  title: USACO Guide
+  subject: algorithm
+  institution: USA Computing Olympiad community
+  kind: tutorial
+  level: intro
+  languages: [C++, Java, Python]
+  platforms: [Online Judge]
+  url: https://usaco.guide/
+  source_access: public
+  source_url: https://github.com/cpinitiative/usaco-guide
+  environment: [local language runtime, online judge]
+  verification: [implement the module exercises, submit to the linked judge, compare verdicts and complexity]
+  outputs: [algorithm implementations, contest submissions, progress reports]
+  status: active
+  checked: 2026-08-18
+
+- id: cmu-csapp-labs
+  title: CMU CS:APP Labs
+  subject: systems
+  institution: Carnegie Mellon University
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly]
+  platforms: [Linux, x86-64, GDB, Valgrind]
+  url: https://csapp.cs.cmu.edu/3e/labs.html
+  source_access: course-provided
+  environment: [64-bit Linux, GCC, GDB, Valgrind, course lab handouts]
+  verification: [run each lab's supplied driver or autograder, inspect traces and measured performance]
+  outputs: [bit-level functions, cache simulator, shell, allocator and proxy server]
+  status: active
+  checked: 2026-08-18
+
+- id: nand2tetris
+  title: Nand2Tetris
+  subject: architecture
+  institution: Hebrew University of Jerusalem
+  kind: course
+  level: undergraduate
+  languages: [HDL, Assembly, VM, Jack]
+  platforms: [Web IDE, Java, simulator]
+  url: https://www.nand2tetris.org/
+  source_access: public
+  source_url: https://github.com/nand2tetris/web-ide
+  environment: [Nand2Tetris web IDE or Java desktop tools, supplied project tests]
+  verification: [run hardware, CPU, VM and compiler test scripts, compare simulator output with expected results]
+  outputs: [logic gates, CPU, assembler, VM translator, compiler and operating-system components]
+  status: active
+  checked: 2026-08-18
+
+- id: mit-xv6-labs
+  title: MIT xv6 操作系统实验
+  subject: os
+  institution: Massachusetts Institute of Technology
+  kind: lab
+  level: advanced
+  languages: [C, Assembly]
+  platforms: [Linux, RISC-V, QEMU, GDB]
+  url: https://pdos.csail.mit.edu/6.1810/2024/
+  source_access: public
+  source_url: https://github.com/mit-pdos/xv6-riscv
+  environment: [Linux, RISC-V GCC toolchain, QEMU, GDB, Python test scripts]
+  verification: [build and boot xv6, run the lab-specific make grade tests, inspect kernel behavior]
+  outputs: [system calls, page tables, traps, file system and threading extensions]
+  status: active
+  checked: 2026-08-18
+
+- id: stanford-cs144
+  title: Stanford CS144 网络实验
+  subject: network
+  institution: Stanford University
+  kind: lab
+  level: undergraduate
+  languages: [C++]
+  platforms: [Linux, IPv4, IPv6, packet capture]
+  url: https://web.stanford.edu/class/cs144/
+  source_access: course-provided
+  environment: [Linux, C++ toolchain, CMake, packet capture tools, course framework]
+  verification: [complete checkpoints for byte stream, TCP sender and receiver, router, then run course tests]
+  outputs: [reliable byte stream, TCP stack, network interface and IP router]
+  status: active
+  checked: 2026-08-18
+
+- id: cmu-bustub
+  title: CMU BusTub 数据库系统实验
+  subject: database
+  institution: Carnegie Mellon University
+  kind: lab
+  level: advanced
+  languages: [C++]
+  platforms: [Linux, Docker optional]
+  url: https://15445.courses.cs.cmu.edu/spring2025/
+  source_access: public
+  source_url: https://github.com/cmu-db/bustub
+  environment: [Linux, C++17 compiler, CMake, course BusTub framework]
+  verification: [run the project-specific grading tests for buffer pool, B+ tree, execution and concurrency]
+  outputs: [buffer pool, index, query executor and concurrent database components]
+  status: seasonal
+  checked: 2026-08-18
+
+- id: mit-65840
+  title: MIT 6.5840 分布式系统实验
+  subject: distributed-systems
+  institution: Massachusetts Institute of Technology
+  kind: lab
+  level: advanced
+  languages: [Go]
+  platforms: [Linux, Go test, simulated network]
+  url: https://pdos.csail.mit.edu/6.824/
+  source_access: course-provided
+  environment: [Linux or macOS, Go toolchain, course test harness]
+  verification: [run the lab test suites for MapReduce, Raft, replicated services and sharding]
+  outputs: [MapReduce runtime, Raft implementation, replicated key-value service, shard controller]
+  status: active
+  checked: 2026-08-18
+
+- id: llvm-kaleidoscope
+  title: LLVM Kaleidoscope 编译器教程
+  subject: compiler
+  institution: LLVM Project
+  kind: tutorial
+  level: undergraduate
+  languages: [C++]
+  platforms: [Linux, macOS, LLVM, CMake]
+  url: https://llvm.org/docs/tutorial/
+  source_access: public
+  source_url: https://github.com/llvm/llvm-project
+  environment: [matching LLVM release, C++ compiler, CMake, LLVM libraries]
+  verification: [compile the language frontend, emit LLVM IR and object code, run JIT and optimizer examples]
+  outputs: [lexer, parser, AST, LLVM IR generator, JIT and optimizer]
+  status: active
+  checked: 2026-08-18
+
+- id: mit-missing-semester
+  title: MIT Missing Semester
+  subject: software-engineering
+  institution: Massachusetts Institute of Technology
+  kind: course
+  level: intro
+  languages: [Shell, Python]
+  platforms: [Linux, macOS, Git]
+  url: https://missing.csail.mit.edu/
+  source_access: public
+  source_url: https://github.com/missing-semester/missing-semester
+  environment: [Unix shell, Git, editor, command-line tools, Python]
+  verification: [complete the lecture exercises for shell, debugging, Git, automation and security workflows]
+  outputs: [shell scripts, Git workflows, automation tools and debugging practices]
+  status: active
+  checked: 2026-08-18
+
+- id: pwn-college
+  title: pwn.college 安全实验平台
+  subject: security
+  institution: Arizona State University and pwn.college community
+  kind: platform
+  level: intro
+  languages: [C, Python, Assembly, Shell]
+  platforms: [Browser, Linux sandbox, SSH]
+  url: https://pwn.college/dojos
+  source_access: external-sandbox
+  environment: [pwn.college isolated challenge environment, browser terminal or SSH]
+  verification: [complete authorized dojo challenges and obtain the expected flags]
+  outputs: [Linux, program-security and exploitation challenge solutions]
+  status: active
+  checked: 2026-08-18
+  safety_note: Only use the provided sandbox, CTF challenges, local targets or systems with explicit authorization.
+
+- id: berkeley-cs184
+  title: UC Berkeley CS184 图形学课程
+  subject: graphics
+  institution: University of California, Berkeley
+  kind: course
+  level: undergraduate
+  languages: [C++]
+  platforms: [Linux, macOS, OpenGL]
+  url: https://cs184.eecs.berkeley.edu/sp26/
+  source_access: course-provided
+  environment: [C++ toolchain, CMake, OpenGL, course assignment framework]
+  verification: [build rasterization, mesh, ray-tracing and animation assignments, inspect rendered output and reports]
+  outputs: [rasterizer, geometry processing, ray tracer and graphics project]
+  status: active
+  checked: 2026-08-18
+
+- id: mit-deep-learning
+  title: MIT 6.S191 深度学习实验
+  subject: ai
+  institution: Massachusetts Institute of Technology
+  kind: course
+  level: intro
+  languages: [Python, Jupyter]
+  platforms: [Google Colab, Jupyter, GPU optional]
+  url: https://introtodeeplearning.com/
+  source_access: public
+  source_url: https://github.com/MITDeepLearning/introtodeeplearning
+  environment: [Google Colab or local Python, TensorFlow, Jupyter]
+  verification: [execute the software labs, train the supplied models and submit or inspect lab competition outputs]
+  outputs: [neural-network notebooks, generative models, computer-vision and language-model experiments]
+  status: active
+  checked: 2026-08-18
+
+- id: llnl-mpi-tutorial
+  title: LLNL MPI 并行编程教程
+  subject: high-performance-computing
+  institution: Lawrence Livermore National Laboratory
+  kind: tutorial
+  level: intro
+  languages: [C, C++, Fortran]
+  platforms: [Linux, MPI, HPC cluster]
+  url: https://hpc-tutorials.llnl.gov/mpi/
+  source_access: not-applicable
+  environment: [MPI implementation, C or Fortran compiler, Linux or HPC cluster]
+  verification: [compile and run the MPI examples, observe rank communication and measure parallel behavior]
+  outputs: [MPI programs, point-to-point and collective communication exercises]
+  status: active
+  checked: 2026-08-18
