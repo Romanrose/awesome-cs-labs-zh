@@ -1,0 +1,77 @@
+- id: oi-wiki
+  title: OI Wiki
+  subject: algorithm
+  institution: Open community
+  kind: wiki
+  level: intro
+  languages: [C++]
+  platforms: [Online Judge]
+  url: https://oi-wiki.org/
+  status: active
+  checked: 2026-08-18
+  outputs: [solutions, complexity analysis]
+
+- id: nju-ics-pa
+  title: NJU 计算机系统基础与 PA
+  subject: systems
+  institution: Nanjing University
+  kind: lab
+  level: undergraduate
+  languages: [C]
+  platforms: [x86, RISC-V, NEMU]
+  url: https://cs.nju.edu.cn/sufeng/course/ics/
+  status: active
+  checked: 2026-08-18
+  outputs: [simulator, runtime, system labs]
+
+- id: rcore-tutorial-v3
+  title: rCore Tutorial Book v3
+  subject: os
+  institution: Tsinghua University
+  kind: lab
+  level: undergraduate
+  languages: [Rust]
+  platforms: [RISC-V, QEMU]
+  url: https://rcore-os.cn/rCore-Tutorial-Book-v3/
+  status: active
+  checked: 2026-08-18
+  outputs: [teaching kernel, lab report]
+
+- id: thu-tcp-lab
+  title: 清华 TCP 实验
+  subject: network
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [C++]
+  platforms: [Linux, Wireshark]
+  url: https://lab.cs.tsinghua.edu.cn/tcp/doc/
+  status: active
+  checked: 2026-08-18
+  outputs: [TCP stack, packet traces]
+
+- id: miniob
+  title: OceanBase MiniOB
+  subject: database
+  institution: OceanBase and ECNU
+  kind: project
+  level: advanced
+  languages: [C++]
+  platforms: [Linux, Docker]
+  url: https://oceanbase.github.io/miniob/db_course_lab/overview/
+  status: active
+  checked: 2026-08-18
+  outputs: [storage engine, query engine, transaction engine]
+
+- id: pku-minic
+  title: 北大编译实践 Minic
+  subject: compiler
+  institution: Peking University
+  kind: lab
+  level: undergraduate
+  languages: [Rust, C++]
+  platforms: [RISC-V]
+  url: https://pku-minic.github.io/online-doc/
+  status: active
+  checked: 2026-08-18
+  outputs: [SysY compiler, RISC-V assembly]
