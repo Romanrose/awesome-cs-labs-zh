@@ -19,6 +19,7 @@
 - [清华计算机组成原理实验](https://lab.cs.tsinghua.edu.cn/cod-lab-docs/labs/)：CPU、流水线与硬件仿真。
 - [清华数字逻辑设计实验](https://lab.cs.tsinghua.edu.cn/digital-design/doc/)：HDL、仿真、综合与 FPGA。
 - [中科大 COD Lab](https://soc.ustc.edu.cn/COD/)：组成原理课程实验资料。
+- [中科大计算系统综合实验](https://soc.ustc.edu.cn/CECS/)：软硬件协同的计算系统实验。
 - [重庆大学硬件综合设计实验](https://github.com/CQU-CS-LABs/CO-lab-docs-CQU)：Verilator、波形与 trace 比对。
 
 ## 操作系统
@@ -27,6 +28,9 @@
 - [SJTU IPADS OS Course Lab](https://sjtu-ipads.github.io/OS-Course-Lab/)：ChCore 微内核与多核系统。
 - [uCore-Tutorial-Guide 2023S](https://learningos.cn/uCore-Tutorial-Guide-2023S/chapter0/index.html)：内存、进程、文件系统与并发。
 - [NJU OS Workbench](https://github.com/lxmwust/os-workbench)：基于 xv6 的系统扩展实验。
+- [北京交通大学操作系统课程实验](https://github.com/bjtu-os/labs)：用 Rust 构建 RISC-V 教学内核。
+- [浙江大学操作系统课程实验](https://zju-os.github.io/doc/)：从启动、调度到虚存和文件系统。
+- [华中科技大学 PKE 操作系统实验](https://gitee.com/hustos/pke-doc)：RISC-V 代理内核与系统能力实验。
 - [重庆大学操作系统课程实验](https://github.com/CQU-CS-LABs/osexp-docs-cqu)：LoongArch32 uCore、Docker 与 QEMU。
 - [哈工大 Linux 0.11 操作系统实验](https://hoverwinter.gitbooks.io/hit-oslab-manual/)：经典 Bochs/Linux 0.11 实验。
 
@@ -44,6 +48,7 @@
 - [OceanBase MiniOB](https://oceanbase.github.io/miniob/db_course_lab/overview/)：存储、查询、事务与性能实验。
 - [PingCAP Talent Plan](https://github.com/pingcap/talent-plan)：分布式系统与数据库课程集合。
 - [TinyKV](https://github.com/talent-plan/tinykv)：从单机 KV 到 Raft 和事务。
+- [中国人民大学 RUCBase 数据库实验](https://github.com/ruc-deke/rucbase-lab)：存储、索引、查询与并发控制。
 
 ## 编译原理
 
@@ -56,6 +61,8 @@
 
 - [清华高性能计算导论实验](https://lab.cs.tsinghua.edu.cn/hpc/doc/)：MPI、OpenMP、CUDA 与性能分析。
 - [FlagOS AI 系统软件开放课程](https://github.com/flagos-ai/OpenCourse)：算子、编译器与分布式训练实验。
+- [昇思与昇腾开发板学习资源库](https://github.com/candle-org/orange-pi-mindspore)：开发板上的大模型与算子实践。
+- [阿里云大模型 ACP 教程](https://github.com/AlibabaCloudDocs/aliyun_acp_learning)：RAG、Agent、评测与部署实战。
 
 ## 软件工程与工程实践
 
@@ -74,3 +81,4 @@
 - [GAMES 在线课程平台](https://games-cn.org/kkk/)：图形学与游戏引擎课程作业。
 - [GAMES101](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)：光栅化、光线追踪与渲染作业。
 - [动手学深度学习](https://zh.d2l.ai/)：Jupyter 驱动的深度学习实验教材。
+- [通义千问 API 入门教程](https://github.com/AlibabaCloudDocs/llm_learning)：从 API 调用到工具与代码执行。

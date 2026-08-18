@@ -662,3 +662,139 @@
   outputs: [AI operator labs, compiler exercises, distributed-training and performance results]
   status: active
   checked: 2026-08-18
+
+- id: bjtu-os-labs
+  title: 北京交通大学操作系统课程实验
+  subject: os
+  institution: Beijing Jiaotong University
+  kind: lab
+  level: undergraduate
+  languages: [Rust, Assembly]
+  platforms: [Linux, RISC-V, QEMU]
+  url: https://github.com/bjtu-os/labs
+  source_access: public
+  source_url: https://github.com/bjtu-os/labs
+  environment: [openEuler 22.03 LTS or compatible Linux, Rust toolchain, QEMU 7.0+]
+  verification: [build each lab, boot the teaching kernel in QEMU, inspect user-program and kernel behavior]
+  outputs: [Rust teaching kernel, batch and multitasking labs, process-management implementation]
+  status: active
+  checked: 2026-08-18
+
+- id: ustc-cecs-lab
+  title: 中科大计算系统综合实验
+  subject: architecture
+  institution: University of Science and Technology of China
+  kind: lab
+  level: undergraduate
+  languages: [C, C++, Assembly, SystemVerilog]
+  platforms: [Linux, simulator]
+  url: https://soc.ustc.edu.cn/CECS/
+  source_access: public
+  source_url: https://github.com/USTC-System-Courses/CECS-Lab
+  environment: [Linux, GNU Make, course simulator and software framework]
+  verification: [initialize each lab with zinit.sh, build the simulator and software components, run the supplied computing-system tasks]
+  outputs: [hardware-software co-design labs, simulator configuration, system software]
+  status: active
+  checked: 2026-08-18
+
+- id: zju-os-course
+  title: 浙江大学操作系统课程实验
+  subject: os
+  institution: Zhejiang University
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly, Python]
+  platforms: [Linux, RISC-V, QEMU, Docker]
+  url: https://zju-os.github.io/doc/
+  source_access: public
+  source_url: https://github.com/ZJU-OS/code
+  environment: [course container or Linux host, RISC-V toolchain, QEMU, GNU Make]
+  verification: [build and boot the RISC-V kernel, run the supplied checks and complete task-specific reports]
+  outputs: [kernel boot, timer scheduling, Sv39 memory, process and file-system labs]
+  status: active
+  checked: 2026-08-18
+
+- id: hust-pke
+  title: 华中科技大学 PKE 操作系统实验
+  subject: os
+  institution: Huazhong University of Science and Technology
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly]
+  platforms: [Linux, RISC-V, Spike, QEMU optional, PYNQ optional]
+  url: https://gitee.com/hustos/pke-doc
+  source_access: public
+  source_url: https://gitee.com/hustos/riscv-pke
+  environment: [Linux, RISC-V cross toolchain, Spike or QEMU, GNU Make]
+  verification: [build and run the PKE labs, observe trap, memory, process, device and file-system behavior]
+  outputs: [RISC-V proxy kernel, OS lab implementations, optional FPGA interface exercises]
+  status: active
+  checked: 2026-08-18
+
+- id: rucbase-lab
+  title: 中国人民大学 RUCBase 数据库实验
+  subject: database
+  institution: Renmin University of China
+  kind: lab
+  level: undergraduate
+  languages: [C, C++, SQL]
+  platforms: [Linux, Docker]
+  url: https://github.com/ruc-deke/rucbase-lab
+  source_access: public
+  source_url: https://github.com/ruc-deke/rucbase-lab
+  environment: [course Docker image or Ubuntu 24.04, GCC 11+ or Clang 14+, CMake 3.22+]
+  verification: [build the server and client, run the supplied unit and SQL tests for each lab]
+  outputs: [storage manager, B+ tree, query executor, transaction and concurrency-control implementation]
+  status: active
+  checked: 2026-08-18
+
+- id: mindspore-orange-pi
+  title: 昇思与昇腾开发板学习资源库
+  subject: ai-infra
+  institution: MindSpore community
+  kind: course
+  level: advanced
+  languages: [Python, Jupyter, C++]
+  platforms: [Linux, Orange Pi AI Pro, Ascend, Jupyter]
+  url: https://github.com/candle-org/orange-pi-mindspore
+  source_access: public
+  source_url: https://github.com/candle-org/orange-pi-mindspore
+  environment: [Orange Pi AI Pro, matched MindSpore and CANN releases, Python, Jupyter]
+  verification: [follow the environment guide, execute course notebooks and supplied operator-support test scripts]
+  outputs: [LLM development, training and inference notebooks, custom operators, reproducible edge-AI applications]
+  status: active
+  checked: 2026-08-18
+
+- id: aliyun-acp-learning
+  title: 阿里云大模型 ACP 教程
+  subject: ai-infra
+  institution: Alibaba Cloud
+  kind: course
+  level: advanced
+  languages: [Python, Jupyter]
+  platforms: [Linux, Jupyter, Alibaba Cloud Model Studio]
+  url: https://github.com/AlibabaCloudDocs/aliyun_acp_learning
+  source_access: public
+  source_url: https://github.com/AlibabaCloudDocs/aliyun_acp_learning
+  environment: [Python, Jupyter, Alibaba Cloud account and Model Studio API credentials]
+  verification: [run the chapter notebooks to build, evaluate and deploy the course question-answering and agent applications]
+  outputs: [RAG application, automated evaluations, multi-agent workflows, deployment exercises]
+  status: active
+  checked: 2026-08-18
+
+- id: aliyun-llm-learning
+  title: 通义千问 API 入门教程
+  subject: ai
+  institution: Alibaba Cloud
+  kind: tutorial
+  level: intro
+  languages: [Python, Jupyter]
+  platforms: [Linux, macOS, Windows, Jupyter]
+  url: https://github.com/AlibabaCloudDocs/llm_learning
+  source_access: public
+  source_url: https://github.com/AlibabaCloudDocs/llm_learning
+  environment: [Python, Git, pip, Jupyter, DashScope API credentials]
+  verification: [install requirements, execute the four supplied notebooks, inspect API responses and tool-execution results]
+  outputs: [API chat, document comparison, tool use, code-execution demos]
+  status: active
+  checked: 2026-08-18
