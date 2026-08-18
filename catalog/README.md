@@ -15,6 +15,7 @@
 | `languages` | 实验主要使用的编程语言 |
 | `platforms` | 架构、操作系统或硬件平台 |
 | `url` | 官方入口 |
+| `source_access` | 源码/框架的取得方式：`public`、`course-provided`、`external-sandbox` 或 `not-applicable` |
 | `source_url` | 可选；公开源码仓库。没有公开源码时不填写，不以转载或答案仓库代替 |
 | `environment` | 运行实验所需的操作系统、工具链、模拟器、容器或课程框架 |
 | `verification` | 完成后可以实际观察到的验证出口，例如单测、在线评测、启动日志、抓包、波形或渲染结果 |
@@ -35,6 +36,7 @@
   languages: [Rust]
   platforms: [RISC-V, QEMU]
   url: https://rcore-os.cn/rCore-Tutorial-Book-v3/
+  source_access: public
   source_url: https://github.com/rcore-os/rCore-Tutorial-v3
   environment: [Rust toolchain, RISC-V target, QEMU]
   verification: [boot the teaching kernel in QEMU, run chapter exercises]
