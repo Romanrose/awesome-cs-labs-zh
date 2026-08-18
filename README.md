@@ -6,6 +6,8 @@
 
 这里关注的不是“课程链接越多越好”，而是：打开文档之后，能否按照说明完成实验，运行代码，看到测试结果，并理解系统为什么这样设计。
 
+> 实验优先：优先收录具备**公开任务说明 + 可获得源码或框架 + 明确环境 + 可观察验证结果**的资源。只有教材、视频或泛课程主页而没有动手出口的资料，不作为本库的核心条目。
+
 ## 收录范围
 
 - 算法与数据结构实验
@@ -32,6 +34,8 @@
 | 编译器 | [北大 Minic](https://pku-minic.github.io/online-doc/) | SysY 到 RISC-V 的编译器 |
 | 分布式 | [TinyKV](https://github.com/talent-plan/tinykv) | Raft、分布式 KV 和事务 |
 | 软件工程 | [清华软件工程文档](https://lab.cs.tsinghua.edu.cn/software-engineering/deploy/gitlab-ci) | Git、测试、CI/CD 和部署 |
+
+每条资源的环境、源码入口和验证方式见 [`catalog/index.yaml`](catalog/index.yaml)。状态为 `seasonal` 的课程可能随学期变动；`needs-check` 则不会进入默认学习路线。
 
 ## 实验文档索引
 
