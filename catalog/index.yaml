@@ -510,3 +510,155 @@
   outputs: [notebooks, trained models, plots]
   status: active
   checked: 2026-08-18
+
+- id: thu-digital-design
+  title: 清华数字逻辑设计实验
+  subject: architecture
+  institution: Tsinghua University
+  kind: lab
+  level: undergraduate
+  languages: [SystemVerilog, Verilog, VHDL]
+  platforms: [Linux, Windows, Vivado, FPGA optional]
+  url: https://lab.cs.tsinghua.edu.cn/digital-design/doc/
+  source_access: public
+  source_url: https://github.com/thu-cs-lab/Digital-Design-Docs
+  environment: [HDL simulator, Vivado or compatible FPGA toolchain, course template]
+  verification: [run provided HDL tests, inspect simulation output, synthesize or deploy a design]
+  outputs: [digital circuits, HDL test results, FPGA project]
+  status: active
+  checked: 2026-08-18
+
+- id: thu-hpc-lab
+  title: 清华高性能计算导论实验
+  subject: high-performance-computing
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [C++, CUDA, OpenMP, MPI]
+  platforms: [Linux, HPC cluster, GPU optional, InfiniBand optional]
+  url: https://lab.cs.tsinghua.edu.cn/hpc/doc/
+  source_access: course-provided
+  environment: [Linux, C++ toolchain, OpenMPI, OpenMP, CUDA according to assignment, course cluster]
+  verification: [build assignment programs, run MPI and profiling scripts, compare latency bandwidth and elapsed-time results]
+  outputs: [parallel programs, benchmark tables, performance analysis report]
+  status: active
+  checked: 2026-08-18
+
+- id: thu-tanlabs
+  title: 清华 TanLabs FPGA 网络实验
+  subject: network
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [Verilog, SystemVerilog, C]
+  platforms: [Linux, Vivado, Artix-7 FPGA, Wireshark]
+  url: https://github.com/thu-cs-lab/tanlabs
+  source_access: public
+  source_url: https://github.com/thu-cs-lab/tanlabs
+  environment: [Vivado, HDL simulator, Linux network namespace tools, Wireshark, course FPGA board optional]
+  verification: [run datapath and system testbenches, compare generated PCAP traces with reference output]
+  outputs: [hardware forwarding engine, CPU firmware integration, simulation and packet traces]
+  status: active
+  checked: 2026-08-18
+
+- id: cqu-os-lab
+  title: 重庆大学操作系统课程实验
+  subject: os
+  institution: Chongqing University
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly]
+  platforms: [Linux, Docker, LoongArch32, QEMU]
+  url: https://github.com/CQU-CS-LABs/osexp-docs-cqu
+  source_access: public
+  source_url: https://github.com/cyyself/ucore-loongarch32
+  environment: [x86-64 Linux or WSL2, Docker, provided LoongArch32 image, QEMU, GDB]
+  verification: [select lab target in Makefile, run make qemu, debug with make debug and make gdb]
+  outputs: [uCore kernel exercises, LoongArch32 boot logs, debugging records]
+  status: active
+  checked: 2026-08-18
+
+- id: cqu-co-lab
+  title: 重庆大学硬件综合设计实验
+  subject: architecture
+  institution: Chongqing University
+  kind: lab
+  level: advanced
+  languages: [Verilog, C++, Assembly]
+  platforms: [Linux, Windows, Vivado, Verilator, GTKWave, FPGA optional]
+  url: https://github.com/CQU-CS-LABs/CO-lab-docs-CQU
+  source_access: public
+  source_url: https://github.com/CQU-CS-LABs/CO-lab-material-CQU
+  environment: [Vivado 2019.2 or compatible release, Verilator 4.2+, GTKWave, C++ build tools]
+  verification: [run functional simulation and trace comparison, inspect VCD waveforms, generate FPGA bitstream if hardware is available]
+  outputs: [CPU design, Verilator test results, waveform and trace evidence]
+  status: active
+  checked: 2026-08-18
+
+- id: sysu-yatcc
+  title: 中山大学 YatCC 编译器课程实验
+  subject: compiler
+  institution: Sun Yat-sen University
+  kind: lab
+  level: advanced
+  languages: [C++, C, LLVM IR]
+  platforms: [Linux, Docker, GitHub Codespaces, web IDE]
+  url: https://yatcc-ai.com/
+  source_access: public
+  source_url: https://github.com/arcsysu/YatCC
+  environment: [development container or Ubuntu 24.04, CMake, Ninja, JDK, Bison, Flex, ANTLR, LLVM]
+  verification: [run task-specific grading scripts and inspect lexer parser IR optimization and backend results]
+  outputs: [compiler frontend, IR passes, code generator, grading results]
+  status: active
+  checked: 2026-08-18
+
+- id: xupt-linuxmooc
+  title: 西安邮电大学 Linux 内核分析与应用
+  subject: systems
+  institution: Xi'an University of Posts and Telecommunications
+  kind: course
+  level: undergraduate
+  languages: [C, Shell]
+  platforms: [Linux, Linux kernel modules]
+  url: https://github.com/ljrcore/linuxmooc
+  source_access: public
+  source_url: https://github.com/ljrcore/linuxmooc
+  environment: [Linux host or virtual machine, GCC, kernel headers, module build tools]
+  verification: [build and load kernel modules, observe kernel logs, analyze source and runtime behavior]
+  outputs: [kernel module exercises, source-analysis notes, experiment results]
+  status: active
+  checked: 2026-08-18
+
+- id: hit-oslab
+  title: 哈工大 Linux 0.11 操作系统实验
+  subject: os
+  institution: Harbin Institute of Technology
+  kind: lab
+  level: undergraduate
+  languages: [C, Assembly]
+  platforms: [Linux, x86, Bochs]
+  url: https://hoverwinter.gitbooks.io/hit-oslab-manual/
+  source_access: public
+  source_url: https://github.com/DeathKing/hit-oslab
+  environment: [Linux, GCC, Bochs, Linux 0.11, provided setup scripts]
+  verification: [modify Linux 0.11, build the kernel, run it in Bochs and inspect the requested experimental result]
+  outputs: [boot, syscall, process, memory and file-system experiments]
+  status: archived
+  checked: 2026-08-18
+
+- id: flagos-open-course
+  title: FlagOS AI 系统软件开放课程
+  subject: ai-infra
+  institution: FlagOS community
+  kind: course
+  level: advanced
+  languages: [Python, Triton, C++, CUDA]
+  platforms: [Linux, Docker, GPU or NPU, online lab]
+  url: https://github.com/flagos-ai/OpenCourse
+  source_access: public
+  source_url: https://github.com/flagos-ai/OpenCourse
+  environment: [course-provided online lab or local GPU/NPU setup, component-specific environment checks]
+  verification: [run environment-check scripts and reference implementations for operators, compilation, distributed training or deployment labs]
+  outputs: [AI operator labs, compiler exercises, distributed-training and performance results]
+  status: active
+  checked: 2026-08-18

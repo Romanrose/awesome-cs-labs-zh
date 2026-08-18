@@ -3,11 +3,13 @@
 
 require "date"
 require "net/http"
+require "openssl"
 require "uri"
 require "yaml"
 
 CATALOG = ARGV.fetch(0, "catalog/index.yaml")
 MAX_REDIRECTS = 5
+MAX_ATTEMPTS = 3
 
 def request(url, redirects = 0)
   raise "too many redirects" if redirects > MAX_REDIRECTS
@@ -24,6 +26,17 @@ def request(url, redirects = 0)
   request(URI.join(uri, response["location"]).to_s, redirects + 1)
 end
 
+def request_with_retry(url)
+  attempts = 0
+  begin
+    attempts += 1
+    request(url)
+  rescue Net::OpenTimeout, Net::ReadTimeout, OpenSSL::SSL::SSLError, SocketError
+    retry if attempts < MAX_ATTEMPTS
+    raise
+  end
+end
+
 items = YAML.safe_load(File.read(CATALOG), permitted_classes: [Date], aliases: false)
 errors = []
 warnings = []
@@ -33,7 +46,7 @@ items.each do |item|
   { "url" => item["url"], "source_url" => item["source_url"] }.compact.each do |field, url|
     checked += 1
     begin
-      response = request(url)
+      response = request_with_retry(url)
       code = response.code.to_i
       message = "#{item['id']}.#{field}: HTTP #{code}"
       if code.between?(200, 399)

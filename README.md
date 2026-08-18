@@ -54,7 +54,9 @@
 ### 计算机组成原理与体系结构
 
 - [清华计算机组成原理实验](https://lab.cs.tsinghua.edu.cn/cod-lab-docs/labs/)：SystemVerilog/Chisel、CPU 设计、仿真和测试。
+- [清华数字逻辑设计实验](https://lab.cs.tsinghua.edu.cn/digital-design/doc/)：HDL 示例、仿真、综合与 FPGA 项目模板。
 - [中科大 COD Lab](https://soc.ustc.edu.cn/COD/)：计算机组成原理课程理论和实验资料。
+- [重庆大学硬件综合设计实验](https://github.com/CQU-CS-LABs/CO-lab-docs-CQU)：Verilator、GTKWave、trace 比对和 Vivado 上板。
 - [清华 CPU + Router 联合实验](https://lab.cs.tsinghua.edu.cn/router/doc/joint/)：CPU 与硬件网络转发引擎联合实现。
 
 ### 操作系统
@@ -63,12 +65,16 @@
 - [SJTU IPADS OS Course Lab](https://sjtu-ipads.github.io/OS-Course-Lab/)：ChCore 微内核、AArch64、多核、进程和 IPC。
 - [uCore-Tutorial-Guide 2023S](https://learningos.cn/uCore-Tutorial-Guide-2023S/chapter0/index.html)：物理/虚拟内存、进程、调度、文件系统和并发。
 - [NJU OS Workbench](https://github.com/lxmwust/os-workbench)：基于 xv6 的虚拟化、持久化和并发实验。
+- [重庆大学操作系统课程实验](https://github.com/CQU-CS-LABs/osexp-docs-cqu)：LoongArch32 uCore、Docker、QEMU 和 GDB。
+- [西安邮电大学 Linux 内核分析与应用](https://github.com/ljrcore/linuxmooc)：内核模块、源码分析与运行时观察。
+- [哈工大 Linux 0.11 操作系统实验](https://hoverwinter.gitbooks.io/hit-oslab-manual/)：经典 Bochs/Linux 0.11 实验；已归档但环境和源码仍公开。
 
 ### 计算机网络
 
 - [清华 TCP 实验](https://lab.cs.tsinghua.edu.cn/tcp/doc/)：实现 TCP 网络栈，结合 RFC、日志、抓包和自动测试。
 - [清华 Router Lab](https://lab.cs.tsinghua.edu.cn/router/doc/)：软件路由器、IPv6、OSPF/RIPng、P4 和数据平面。
 - [中科大信息网络实验室](https://if.ustc.edu.cn/course/)：网络原理、组网、Linux 网络命令和 Internet 应用分析。
+- [清华 TanLabs](https://github.com/thu-cs-lab/tanlabs)：FPGA 转发引擎、CPU 固件、testbench 与 PCAP 验证。
 
 ### 数据库与分布式存储
 
@@ -83,6 +89,12 @@
 - [北大编译实践 Minic](https://pku-minic.github.io/online-doc/)：SysY、IR、代码生成、RISC-V 和优化。
 - [中科大编译原理和技术](https://ustc-compiler-principles.github.io/textbook/)：词法、语法、语义、IR、后端和在线评测。
 - [南京大学编译原理](https://cs.nju.edu.cn/tiantan/courses/compiler-2023/index.html)：实现一个类 C 语言编译器。
+- [中山大学 YatCC](https://yatcc-ai.com/)：可用容器、本地环境或在线 IDE 完成六阶段编译器实验。
+
+### 高性能计算与 AI 系统
+
+- [清华高性能计算导论实验](https://lab.cs.tsinghua.edu.cn/hpc/doc/)：MPI、OpenMP、CUDA、性能剖析和集群带宽测试。
+- [FlagOS AI 系统软件开放课程](https://github.com/flagos-ai/OpenCourse)：算子、编译器、分布式训练与性能实验，提供环境检查和参考实现。
 
 ### 软件工程与工程实践
 
