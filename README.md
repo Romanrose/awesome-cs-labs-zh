@@ -25,6 +25,7 @@
 ### 国外
 
 - [CMU CS:APP Labs](https://csapp.cs.cmu.edu/3e/labs.html)：Data、Cache、Shell、Malloc 与 Proxy 实验。
+- [Stanford CS107](https://web.stanford.edu/class/cs107/labs.html)：C、指针、堆、汇编与调试实验。
 
 ## 计算机组成原理与体系结构
 
@@ -39,6 +40,8 @@
 ### 国外
 
 - [Nand2Tetris](https://www.nand2tetris.org/)：从逻辑门、CPU 到编译器和操作系统。
+- [MIT 6.004 Computation Structures](https://computationstructures.org/)：浏览器电路实验与 RISC 处理器设计。
+- [UC Berkeley CS61C](https://cs61c.org/sp26/)：C、RISC-V、缓存、并行和 CPU 项目。
 
 ## 操作系统
 
@@ -57,6 +60,7 @@
 ### 国外
 
 - [MIT xv6 操作系统实验](https://pdos.csail.mit.edu/6.1810/2024/)：围绕 RISC-V xv6 实现系统调用、虚存、文件系统与线程。
+- [UW CSE451](https://courses.cs.washington.edu/courses/cse451/26wi/)：在 xv6 衍生内核中实现分页、并发与崩溃恢复。
 
 ## 计算机网络
 
@@ -85,6 +89,7 @@
 ### 国外
 
 - [CMU BusTub](https://15445.courses.cs.cmu.edu/spring2025/)：缓冲池、B+ 树、查询执行与并发控制。
+- [UC Berkeley CS186](https://cs186berkeley.net/)：Java 数据库内核、索引、查询、恢复与并发实验。
 - [MIT 6.5840](https://pdos.csail.mit.edu/6.824/)：MapReduce、Raft、复制服务与分片实验。
 
 ## 编译原理
@@ -99,6 +104,7 @@
 ### 国外
 
 - [LLVM Kaleidoscope](https://llvm.org/docs/tutorial/)：从词法分析到 LLVM IR、JIT 与优化。
+- [Stanford CS143](https://web.stanford.edu/class/cs143/)：Cool 编译器的词法、语法、语义和代码生成项目。
 
 ## 高性能计算与 AI 系统
 
@@ -125,6 +131,7 @@
 ### 国外
 
 - [MIT Missing Semester](https://missing.csail.mit.edu/)：Shell、Git、调试、自动化与开发工具实践。
+- [MIT 6.031 软件构造](https://web.mit.edu/6.031/www/fa21/)：测试、代码评审、并发、网络与团队项目。
 
 ## 网络安全
 
@@ -136,6 +143,7 @@
 ### 国外
 
 - [pwn.college](https://pwn.college/dojos)：浏览器沙箱中的 Linux、程序安全与利用挑战。
+- [SEED Security Labs](https://seedsecuritylabs.org/)：隔离 Linux 环境中的网络、Web、密码和系统安全实验。
 
 ## 图形学与人工智能
 
@@ -149,4 +157,6 @@
 
 - [GAMES101](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)：光栅化、光线追踪与渲染作业。
 - [UC Berkeley CS184](https://cs184.eecs.berkeley.edu/sp26/)：光栅化、网格、光线追踪与课程项目。
+- [Stanford CS148](https://web.stanford.edu/class/cs148/index.html)：Blender、OpenGL、渲染与图像项目。
 - [MIT 6.S191](https://introtodeeplearning.com/)：TensorFlow/Jupyter 深度学习软件实验。
+- [UC Berkeley CS188](https://inst.eecs.berkeley.edu/~cs188/sp26/)：搜索、多智能体、强化学习与概率推理项目。
