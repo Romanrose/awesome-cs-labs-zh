@@ -1,3 +1,6 @@
+# 所有链接均指向官方课程页、项目页或公开源码；不收录题解镜像。
+# verification 是完成实验后应能观察到的结果，不等同于对外部项目的兼容性承诺。
+
 - id: oi-wiki
   title: OI Wiki
   subject: algorithm
@@ -7,9 +10,41 @@
   languages: [C++]
   platforms: [Online Judge]
   url: https://oi-wiki.org/
+  environment: [C++ compiler, online judge]
+  verification: [submit implementations to an online judge, compare against sample and hidden tests]
+  outputs: [solutions, complexity analysis]
   status: active
   checked: 2026-08-18
-  outputs: [solutions, complexity analysis]
+
+- id: labuladong
+  title: labuladong 算法教程
+  subject: algorithm
+  institution: labuladong
+  kind: tutorial
+  level: intro
+  languages: [Python, Java, C++]
+  platforms: [Online Judge]
+  url: https://labuladong.online/zh/
+  environment: [local language runtime, online judge]
+  verification: [implement the described pattern, submit to the linked problem set]
+  outputs: [algorithm implementations, problem submissions]
+  status: active
+  checked: 2026-08-18
+
+- id: luogu
+  title: 洛谷
+  subject: algorithm
+  institution: Luogu
+  kind: judge
+  level: intro
+  languages: [C++, C, Python, Java]
+  platforms: [Online Judge]
+  url: https://www.luogu.com.cn/
+  environment: [browser, supported compiler]
+  verification: [online verdict and per-test feedback]
+  outputs: [accepted submissions]
+  status: active
+  checked: 2026-08-18
 
 - id: nju-ics-pa
   title: NJU 计算机系统基础与 PA
@@ -17,25 +52,124 @@
   institution: Nanjing University
   kind: lab
   level: undergraduate
-  languages: [C]
-  platforms: [x86, RISC-V, NEMU]
+  languages: [C, Assembly]
+  platforms: [Linux, x86, RISC-V, NEMU]
   url: https://cs.nju.edu.cn/sufeng/course/ics/
+  source_url: https://github.com/NJU-ProjectN/nemu
+  environment: [Linux, GCC or Clang, GNU Make, NEMU]
+  verification: [run the emulator, execute ISA and monitor tests, inspect program and device behavior]
+  outputs: [ISA emulator, runtime, system labs]
   status: active
   checked: 2026-08-18
-  outputs: [simulator, runtime, system labs]
+
+- id: ysyx-nemu
+  title: 一生一芯与 NEMU
+  subject: architecture
+  institution: Open-source community
+  kind: course
+  level: advanced
+  languages: [C, SystemVerilog, Assembly]
+  platforms: [Linux, RISC-V, Verilator, FPGA optional]
+  url: https://ysyx.oscc.cc/docs/
+  source_url: https://github.com/NJU-ProjectN/nemu
+  environment: [Linux, GCC, GNU Make, Verilator, RISC-V toolchain]
+  verification: [NEMU execution, differential testing, RTL simulation, SoC software boot]
+  outputs: [emulator, RTL CPU, SoC system]
+  status: active
+  checked: 2026-08-18
+
+- id: thu-cod-lab
+  title: 清华计算机组成原理实验
+  subject: architecture
+  institution: Tsinghua University
+  kind: lab
+  level: undergraduate
+  languages: [SystemVerilog, Chisel]
+  platforms: [Linux, RTL simulator, FPGA optional]
+  url: https://lab.cs.tsinghua.edu.cn/cod-lab-docs/labs/
+  environment: [course-provided framework, HDL simulator, waveform viewer]
+  verification: [unit tests, simulation traces, CPU program execution]
+  outputs: [CPU design, pipeline, simulation reports]
+  status: active
+  checked: 2026-08-18
+
+- id: ustc-cod-lab
+  title: 中科大 COD Lab
+  subject: architecture
+  institution: University of Science and Technology of China
+  kind: course
+  level: undergraduate
+  languages: [course-specific]
+  platforms: [course-specific]
+  url: https://soc.ustc.edu.cn/COD/
+  environment: [follow the current course handout]
+  verification: [course-provided simulator or lab evaluation]
+  outputs: [computer organization exercises and labs]
+  status: seasonal
+  checked: 2026-08-18
 
 - id: rcore-tutorial-v3
   title: rCore Tutorial Book v3
   subject: os
-  institution: Tsinghua University
+  institution: Tsinghua University and rCore community
   kind: lab
   level: undergraduate
   languages: [Rust]
-  platforms: [RISC-V, QEMU]
+  platforms: [Linux, RISC-V, QEMU, K210 optional]
   url: https://rcore-os.cn/rCore-Tutorial-Book-v3/
+  source_url: https://github.com/rcore-os/rCore-Tutorial-v3
+  environment: [Rust toolchain, RISC-V target, QEMU, GNU Make]
+  verification: [boot the teaching kernel in QEMU, run chapter exercises and user programs]
+  outputs: [runnable teaching kernel, lab report]
   status: active
   checked: 2026-08-18
-  outputs: [teaching kernel, lab report]
+
+- id: chcore-os-course-lab
+  title: SJTU IPADS OS Course Lab
+  subject: os
+  institution: Shanghai Jiao Tong University IPADS
+  kind: lab
+  level: advanced
+  languages: [C, Assembly]
+  platforms: [Linux, AArch64, QEMU, Raspberry Pi optional]
+  url: https://sjtu-ipads.github.io/OS-Course-Lab/
+  source_url: https://github.com/SJTU-IPADS/OS-Course-Lab
+  environment: [Linux, AArch64 cross compiler, QEMU, GNU Make]
+  verification: [boot ChCore, run process, IPC and virtual-memory test programs]
+  outputs: [microkernel components, experiment reports]
+  status: active
+  checked: 2026-08-18
+
+- id: ucore-tutorial-2023s
+  title: uCore Tutorial Guide 2023S
+  subject: os
+  institution: Tsinghua University and LearningOS community
+  kind: lab
+  level: undergraduate
+  languages: [C, Rust optional]
+  platforms: [Linux, RISC-V, QEMU]
+  url: https://learningos.cn/uCore-Tutorial-Guide-2023S/chapter0/index.html
+  source_url: https://github.com/LearningOS/uCore-Tutorial-Code-2023S
+  environment: [Linux, C toolchain, Docker optional, QEMU, GDB]
+  verification: [build and boot in QEMU, run chapter exercises and supplied test cases]
+  outputs: [teaching OS kernel, user programs, lab reports]
+  status: active
+  checked: 2026-08-18
+
+- id: nju-os-workbench
+  title: NJU OS Workbench
+  subject: os
+  institution: Nanjing University
+  kind: lab
+  level: advanced
+  languages: [C]
+  platforms: [Linux, xv6, QEMU]
+  url: https://github.com/lxmwust/os-workbench
+  environment: [Linux, C toolchain, QEMU, GNU Make]
+  verification: [boot xv6-based system, complete virtualization, persistence and concurrency tasks]
+  outputs: [xv6 extensions, lab code]
+  status: active
+  checked: 2026-08-18
 
 - id: thu-tcp-lab
   title: 清华 TCP 实验
@@ -46,22 +180,118 @@
   languages: [C++]
   platforms: [Linux, Wireshark]
   url: https://lab.cs.tsinghua.edu.cn/tcp/doc/
+  environment: [Linux, C++ toolchain, packet capture tool, course framework]
+  verification: [protocol tests, logs and packet traces]
+  outputs: [TCP stack, packet traces]
   status: active
   checked: 2026-08-18
-  outputs: [TCP stack, packet traces]
+
+- id: thu-router-lab
+  title: 清华 Router Lab
+  subject: network
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [C++, P4]
+  platforms: [Linux, IPv6, network emulator, hardware optional]
+  url: https://lab.cs.tsinghua.edu.cn/router/doc/
+  environment: [Linux, C++ toolchain, course topology and test framework]
+  verification: [forwarding and routing protocol test cases, packet capture]
+  outputs: [software router, IPv6 routing functions, P4 data plane]
+  status: active
+  checked: 2026-08-18
+
+- id: ustc-network-course
+  title: 中科大信息网络实验室课程资料
+  subject: network
+  institution: University of Science and Technology of China
+  kind: course
+  level: undergraduate
+  languages: [course-specific]
+  platforms: [Linux, network tools]
+  url: https://if.ustc.edu.cn/course/
+  environment: [Linux host or virtual machine, network analysis tools]
+  verification: [network command output, packet capture and course assignments]
+  outputs: [network configuration and analysis exercises]
+  status: seasonal
+  checked: 2026-08-18
+
+- id: thu-dbs-tutorial
+  title: 清华数据库系统概论实验
+  subject: database
+  institution: Tsinghua University
+  kind: tutorial
+  level: undergraduate
+  languages: [course-specific]
+  platforms: [Linux]
+  url: https://thu-db.github.io/dbs-tutorial/
+  environment: [follow the exercise-specific setup]
+  verification: [implement storage and query components, use course test cases]
+  outputs: [page storage, buffer manager, B+ tree, query exercises]
+  status: active
+  checked: 2026-08-18
+
+- id: huadb
+  title: HuaDB 数据库内核实验
+  subject: database
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [Java]
+  platforms: [Linux, macOS, Windows]
+  url: https://thu-db.github.io/huadb-doc/1-prepare/
+  source_url: https://github.com/thu-db/huadb
+  environment: [JDK, Maven or Gradle according to the project instructions]
+  verification: [unit tests for storage, recovery, cache and query modules]
+  outputs: [database kernel modules, test results]
+  status: active
+  checked: 2026-08-18
 
 - id: miniob
   title: OceanBase MiniOB
   subject: database
-  institution: OceanBase and ECNU
+  institution: OceanBase and East China Normal University
   kind: project
   level: advanced
   languages: [C++]
-  platforms: [Linux, Docker]
+  platforms: [Linux, Docker, VS Code optional]
   url: https://oceanbase.github.io/miniob/db_course_lab/overview/
+  source_url: https://github.com/oceanbase/miniob
+  environment: [C++ toolchain, CMake, Docker or provided online environment]
+  verification: [build and debug MiniOB, submit to integration tests, pass basic and lab tasks]
+  outputs: [LSM-tree, query engine, transaction engine, performance report]
   status: active
   checked: 2026-08-18
-  outputs: [storage engine, query engine, transaction engine]
+
+- id: pingcap-talent-plan
+  title: PingCAP Talent Plan
+  subject: distributed-systems
+  institution: PingCAP
+  kind: course
+  level: advanced
+  languages: [Rust, Go]
+  platforms: [Linux, macOS]
+  url: https://github.com/pingcap/talent-plan
+  environment: [Rust or Go toolchain, Git, Docker optional]
+  verification: [course-specific unit and integration tests]
+  outputs: [distributed systems exercises, database internals projects]
+  status: active
+  checked: 2026-08-18
+
+- id: tinykv
+  title: TinyKV
+  subject: distributed-systems
+  institution: PingCAP Talent Plan
+  kind: lab
+  level: advanced
+  languages: [Go]
+  platforms: [Linux, macOS]
+  url: https://github.com/talent-plan/tinykv
+  environment: [Go toolchain, Git, course test harness]
+  verification: [run project unit tests for standalone KV, Raft and transaction stages]
+  outputs: [distributed KV store, Raft, scheduler, transactions]
+  status: active
+  checked: 2026-08-18
 
 - id: pku-minic
   title: 北大编译实践 Minic
@@ -70,8 +300,178 @@
   kind: lab
   level: undergraduate
   languages: [Rust, C++]
-  platforms: [RISC-V]
+  platforms: [Linux, Docker, RISC-V]
   url: https://pku-minic.github.io/online-doc/
+  environment: [course container, compiler toolchain, RISC-V execution environment]
+  verification: [compile SysY programs, pass online evaluation, inspect generated RISC-V assembly]
+  outputs: [SysY compiler, intermediate representation, RISC-V assembly]
   status: active
   checked: 2026-08-18
-  outputs: [SysY compiler, RISC-V assembly]
+
+- id: ustc-compiler-principles
+  title: 中科大编译原理和技术
+  subject: compiler
+  institution: University of Science and Technology of China
+  kind: course
+  level: undergraduate
+  languages: [C++, Java]
+  platforms: [Linux, online judge]
+  url: https://ustc-compiler-principles.github.io/textbook/
+  environment: [course starter code, supported compiler or runtime]
+  verification: [online judge and assignment test cases]
+  outputs: [lexer, parser, IR and backend exercises]
+  status: active
+  checked: 2026-08-18
+
+- id: nju-compiler
+  title: 南京大学编译原理
+  subject: compiler
+  institution: Nanjing University
+  kind: course
+  level: undergraduate
+  languages: [C, C++]
+  platforms: [Linux]
+  url: https://cs.nju.edu.cn/tiantan/courses/compiler-2023/index.html
+  environment: [Linux, C or C++ toolchain, course framework]
+  verification: [compile course language programs and run supplied cases]
+  outputs: [C-like language compiler]
+  status: seasonal
+  checked: 2026-08-18
+
+- id: thu-software-engineering
+  title: 清华软件工程课程文档
+  subject: software-engineering
+  institution: Tsinghua University
+  kind: tutorial
+  level: undergraduate
+  languages: [project-specific]
+  platforms: [GitLab, Docker, CI/CD]
+  url: https://lab.cs.tsinghua.edu.cn/software-engineering/deploy/gitlab-ci
+  environment: [Git, GitLab CI/CD, Docker according to the exercise]
+  verification: [pipeline status, automated tests and deployment checks]
+  outputs: [versioned project, CI pipeline, deployment artifacts]
+  status: active
+  checked: 2026-08-18
+
+- id: nju-software-engineering
+  title: 南京大学软件工程实验
+  subject: software-engineering
+  institution: Nanjing University
+  kind: lab
+  level: undergraduate
+  languages: [project-specific]
+  platforms: [Git, issue tracker, CI]
+  url: https://seg.nju.edu.cn/curriculums/Software_Engineering_%28Fall_2018%29/Experiment03
+  environment: [team repository, issue tracker, testing and CI tools]
+  verification: [requirements, design, review and test deliverables]
+  outputs: [team project artifacts, test reports]
+  status: archived
+  checked: 2026-08-18
+
+- id: git4edu
+  title: Git4Edu
+  subject: software-engineering
+  institution: GitLink community
+  kind: platform
+  level: undergraduate
+  languages: [project-specific]
+  platforms: [Git, GitLink, CI]
+  url: https://www.gitlink.org.cn/cmy4399/Git4Edu
+  environment: [Git, issue and pull-request workflow, CI service]
+  verification: [issues, pull requests, reviews and CI records]
+  outputs: [course project history, collaborative development artifacts]
+  status: active
+  checked: 2026-08-18
+
+- id: educg-se
+  title: 希冀软件工程实践平台
+  subject: software-engineering
+  institution: Educg
+  kind: platform
+  level: advanced
+  languages: [project-specific]
+  platforms: [GitLab, Docker, Kubernetes]
+  url: https://www.educg.net/se.html
+  environment: [platform-provided GitLab, container and deployment environment]
+  verification: [code review, CI/CD pipeline and deployment result]
+  outputs: [engineering project, automated delivery artifacts]
+  status: active
+  checked: 2026-08-18
+
+- id: ctf-wiki
+  title: CTF Wiki
+  subject: security
+  institution: CTF Wiki community
+  kind: wiki
+  level: undergraduate
+  languages: [C, Python, Assembly]
+  platforms: [Linux, CTF sandbox]
+  url: https://ctf-wiki.org/
+  environment: [CTF challenge environment or explicitly authorized lab]
+  verification: [reproduce a challenge only in the supplied sandbox, obtain the expected flag]
+  outputs: [writeups, challenge solutions]
+  status: active
+  checked: 2026-08-18
+  safety_note: Only use against CTF challenges, local targets or systems with explicit authorization.
+
+- id: ctf-all-in-one
+  title: CTF All In One
+  subject: security
+  institution: Firmiana
+  kind: wiki
+  level: undergraduate
+  languages: [C, Python, Assembly]
+  platforms: [Linux, CTF sandbox]
+  url: https://firmianay.gitbooks.io/ctf-all-in-one/content/
+  environment: [Linux virtual machine, debugger, CTF challenge files]
+  verification: [run the provided challenge locally and validate the expected flag]
+  outputs: [binary analysis exercises, security notes]
+  status: needs-check
+  checked: 2026-08-18
+  safety_note: Only use against CTF challenges, local targets or systems with explicit authorization.
+
+- id: games101
+  title: GAMES101
+  subject: graphics
+  institution: University of California, Santa Barbara
+  kind: course
+  level: undergraduate
+  languages: [C++]
+  platforms: [Linux, macOS, Windows]
+  url: https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html
+  environment: [C++ compiler, CMake, course assignment framework]
+  verification: [render reference scenes and compare generated images]
+  outputs: [rasterizer, ray tracer, rendering assignments]
+  status: active
+  checked: 2026-08-18
+
+- id: games-cn
+  title: GAMES 在线课程平台
+  subject: graphics
+  institution: GAMES course community
+  kind: platform
+  level: undergraduate
+  languages: [course-specific]
+  platforms: [course-specific]
+  url: https://games-cn.org/kkk/
+  environment: [refer to the selected course assignment]
+  verification: [assignment-specific rendered result or program output]
+  outputs: [graphics and game-engine assignments]
+  status: active
+  checked: 2026-08-18
+
+- id: d2l-zh
+  title: 动手学深度学习
+  subject: ai
+  institution: D2L community
+  kind: tutorial
+  level: intro
+  languages: [Python]
+  platforms: [Jupyter, Linux, macOS, Windows, GPU optional]
+  url: https://zh.d2l.ai/
+  source_url: https://github.com/d2l-ai/d2l-zh
+  environment: [Python, Jupyter, PyTorch or MXNet as selected by the book]
+  verification: [execute notebook cells, reproduce training metrics and visualizations]
+  outputs: [notebooks, trained models, plots]
+  status: active
+  checked: 2026-08-18
