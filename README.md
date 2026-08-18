@@ -35,7 +35,7 @@
 | 分布式 | [TinyKV](https://github.com/talent-plan/tinykv) | Raft、分布式 KV 和事务 |
 | 软件工程 | [清华软件工程文档](https://lab.cs.tsinghua.edu.cn/software-engineering/deploy/gitlab-ci) | Git、测试、CI/CD 和部署 |
 
-每条资源的环境、源码入口和验证方式见 [`catalog/index.yaml`](catalog/index.yaml)。状态为 `seasonal` 的课程可能随学期变动；`needs-check` 则不会进入默认学习路线。
+每条资源的环境、源码入口和验证方式见 [`catalog/index.yaml`](catalog/index.yaml)。其中 `source_access: public` 表示可直接取得公开源码，`course-provided` 表示以课程发放框架为准，`external-sandbox` 只适用于授权靶场；`seasonal` 的课程可能随学期变动，`needs-check` 则不会进入默认学习路线。
 
 ## 实验文档索引
 

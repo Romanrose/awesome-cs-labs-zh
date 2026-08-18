@@ -27,9 +27,11 @@ end
 items = YAML.safe_load(File.read(CATALOG), permitted_classes: [Date], aliases: false)
 errors = []
 warnings = []
+checked = 0
 
 items.each do |item|
   { "url" => item["url"], "source_url" => item["source_url"] }.compact.each do |field, url|
+    checked += 1
     begin
       response = request(url)
       code = response.code.to_i
@@ -54,5 +56,5 @@ end
 
 warnings.each { |message| warn "WARN #{message}" }
 errors.each { |message| warn "FAIL #{message}" }
-puts "link check: #{items.length} official entries checked, #{warnings.length} warning(s), #{errors.length} error(s)"
+puts "link check: #{checked} URLs across #{items.length} records, #{warnings.length} warning(s), #{errors.length} error(s)"
 exit(errors.empty? ? 0 : 1)

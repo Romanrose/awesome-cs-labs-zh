@@ -8,11 +8,12 @@ require "yaml"
 CATALOG = ARGV.fetch(0, "catalog/index.yaml")
 REQUIRED_FIELDS = %w[
   id title subject institution kind level languages platforms url environment
-  verification outputs status checked
+  verification outputs status checked source_access
 ].freeze
 ALLOWED_KINDS = %w[course judge lab platform project tutorial wiki].freeze
 ALLOWED_LEVELS = %w[intro undergraduate advanced research].freeze
 ALLOWED_STATUSES = %w[active seasonal archived needs-check].freeze
+ALLOWED_SOURCE_ACCESS = %w[public course-provided external-sandbox not-applicable].freeze
 
 def failure(message)
   warn "catalog validation failed: #{message}"
@@ -51,10 +52,12 @@ items.each_with_index do |item, index|
   failure("#{id}.kind is not supported") unless ALLOWED_KINDS.include?(item["kind"])
   failure("#{id}.level is not supported") unless ALLOWED_LEVELS.include?(item["level"])
   failure("#{id}.status is not supported") unless ALLOWED_STATUSES.include?(item["status"])
+  failure("#{id}.source_access is not supported") unless ALLOWED_SOURCE_ACCESS.include?(item["source_access"])
   failure("#{id}.url must be an http(s) URL") unless item["url"].is_a?(String) && valid_url?(item["url"])
   if item.key?("source_url")
     failure("#{id}.source_url must be an http(s) URL") unless item["source_url"].is_a?(String) && valid_url?(item["source_url"])
   end
+  failure("#{id} is marked public without source_url") if item["source_access"] == "public" && !item.key?("source_url")
   failure("#{id}.checked must be a YAML date") unless item["checked"].is_a?(Date)
   failure("#{id} is a security resource without safety_note") if item["subject"] == "security" && !(item["safety_note"].is_a?(String) && !item["safety_note"].empty?)
 end
