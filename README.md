@@ -140,13 +140,28 @@ CSAPP / NEMU / 计算机组成原理
 ## 目录约定
 
 ```text
-catalog/
-├── index.yaml       # 机器可读的资源索引
-└── README.md        # 索引字段说明
-docs/                # 原创实验笔记、环境说明和踩坑记录
+.
+├── catalog/
+│   ├── index.yaml       # 机器可读的资源索引
+│   └── README.md        # 索引字段说明
+├── docs/
+│   └── 实验记录模板.md   # 从环境到测试证据的记录模板
+├── scripts/             # 本地与 CI 使用的校验脚本
+└── .github/workflows/   # 提交校验与每周链接检查
 ```
 
 资源元数据格式见 [`catalog/README.md`](catalog/README.md)。
+
+## 本地校验与持续核验
+
+不需要安装项目依赖；本机有 Ruby 即可运行：
+
+```bash
+ruby scripts/validate_catalog.rb # 校验字段、状态、URL 格式和安全边界
+ruby scripts/check_links.rb      # 访问官方入口与源码入口
+```
+
+`Validate catalog` 会在提交和 PR 时运行；`Check link health` 每周执行一次。`needs-check` 和 `archived` 的失效链接只会报警，避免历史记录掩盖问题或阻塞维护。
 
 ## 贡献
 
