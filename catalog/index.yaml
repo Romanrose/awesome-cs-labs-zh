@@ -426,7 +426,7 @@
   environment: [Linux virtual machine, debugger, CTF challenge files]
   verification: [run the provided challenge locally and validate the expected flag]
   outputs: [binary analysis exercises, security notes]
-  status: needs-check
+  status: active
   checked: 2026-08-18
   safety_note: Only use against CTF challenges, local targets or systems with explicit authorization.
 
