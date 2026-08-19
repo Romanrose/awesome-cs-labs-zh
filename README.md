@@ -66,6 +66,8 @@
 
 ### 国内
 
+- [清华 TCP 实验](https://lab.cs.tsinghua.edu.cn/tcp/doc/)：实现 TCP 栈并抓包验证；本项目仅收录链接，使用材料需遵守原项目授权。
+- [清华 Router Lab](https://lab.cs.tsinghua.edu.cn/router/doc/)：软件路由、IPv6、路由协议与 P4；本项目仅收录链接，使用材料需遵守原项目授权。
 - [南京大学计算机网络实验文档](https://nasa.nju.edu.cn/tutorial/)：九个实验覆盖 Socket、TCP、路由、mOSPF、交换机与广播，并提供 OJ 评测。
 - [PKU CS144 中文学习资料](https://github.com/PKUFlyingPig/CS144-Computer-Network)：Stanford CS144 的中文笔记、实验说明与 TCP/IP 实现路线。
 - [中科大信息网络实验室](https://if.ustc.edu.cn/course/)：组网、网络命令与协议分析。
