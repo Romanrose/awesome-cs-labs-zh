@@ -183,6 +183,40 @@
   status: active
   checked: 2026-08-18
 
+- id: thu-tcp-lab
+  title: 清华 TCP 实验
+  subject: network
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [C++]
+  platforms: [Linux, Wireshark]
+  url: https://lab.cs.tsinghua.edu.cn/tcp/doc/
+  source_access: course-provided
+  source_url: https://github.com/thu-cs-lab/TCP-Lab-Docs
+  environment: [Linux, C++ toolchain, packet capture tools, course framework, upstream authorization required]
+  verification: [study the TCP stack requirements and run protocol tests or packet-trace checks only with authorized materials]
+  outputs: [TCP stack exercises, packet traces and protocol-analysis notes]
+  status: active
+  checked: 2026-08-19
+
+- id: thu-router-lab
+  title: 清华 Router Lab
+  subject: network
+  institution: Tsinghua University
+  kind: lab
+  level: advanced
+  languages: [C++, P4]
+  platforms: [Linux, IPv6, routing protocols, P4]
+  url: https://lab.cs.tsinghua.edu.cn/router/doc/
+  source_access: course-provided
+  source_url: https://github.com/thu-cs-lab/Router-Lab-Docs
+  environment: [Linux, C++ toolchain, IPv6, course test framework, upstream authorization required]
+  verification: [study software-router, OSPF/RIPng and P4 experiment requirements and run authorized test cases]
+  outputs: [software-router exercises, IPv6 routing, OSPF/RIPng and P4 data-plane notes]
+  status: active
+  checked: 2026-08-19
+
 - id: ustc-network-course
   title: 中科大信息网络实验室课程资料
   subject: network
