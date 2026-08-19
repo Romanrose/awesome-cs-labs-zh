@@ -144,11 +144,16 @@
 
 - [CTF Wiki](https://ctf-wiki.org/)：Web、Pwn、逆向、密码与取证。
 - [CTF All in One](https://firmianay.gitbooks.io/ctf-all-in-one/content/)：二进制与 Linux 安全实验参考。
+- [Bugku](https://ctf.bugku.com/)：面向入门的 CTF/AWD 解题与攻防训练。
+- [西电 CTF 终端](https://ctf.xidian.edu.cn/)：高校 CTF 比赛与日常训练平台。
 
 ### 国外
 
+- [Vulhub](https://vulhub.org/zh)：用 Docker Compose 本地复现公开漏洞环境。
 - [pwn.college](https://pwn.college/dojos)：浏览器沙箱中的 Linux、程序安全与利用挑战。
 - [SEED Security Labs](https://seedsecuritylabs.org/)：隔离 Linux 环境中的网络、Web、密码和系统安全实验。
+- [TryHackMe](https://tryhackme.com)：引导式房间、靶场与渗透测试训练。
+- [Hack The Box](https://www.hackthebox.com)：涵盖 Web、逆向、密码学与系统安全的在线靶场。
 
 ## 图形学与人工智能
 

@@ -1258,3 +1258,89 @@
   outputs: [routing algorithms, virtual network topologies, SDN firewall and BGP experiments]
   status: active
   checked: 2026-08-18
+
+- id: bugku-ctf
+  title: Bugku CTF/AWD 实战平台
+  subject: security
+  institution: Bugku / Shandong Anxin Security Technology
+  kind: platform
+  level: intro
+  languages: [C, Python, JavaScript, Assembly]
+  platforms: [Browser, CTF sandbox, AWD]
+  url: https://ctf.bugku.com/
+  source_access: external-sandbox
+  environment: [browser-based CTF/AWD platform, challenge-specific runtime]
+  verification: [solve authorized challenges, obtain flags or submit accepted attack-defense results]
+  outputs: [challenge solutions, writeups, attack-defense practice records]
+  status: active
+  checked: 2026-08-19
+  safety_note: Only use the supplied challenge platform, local targets or systems with explicit authorization.
+
+- id: xidian-ctf-terminal
+  title: 西电 CTF 终端
+  subject: security
+  institution: Xidian University
+  kind: platform
+  level: undergraduate
+  languages: [C, Python, JavaScript, Assembly]
+  platforms: [Browser, CTF sandbox]
+  url: https://ctf.xidian.edu.cn/
+  source_access: external-sandbox
+  environment: [browser-based CTF platform, challenge-specific runtime]
+  verification: [solve authorized university-platform challenges and obtain flags or accepted results]
+  outputs: [CTF solutions, writeups, training records]
+  status: active
+  checked: 2026-08-19
+  safety_note: Only use the supplied challenge platform, local targets or systems with explicit authorization.
+
+- id: vulhub
+  title: Vulhub 漏洞环境
+  subject: security
+  institution: Vulhub community
+  kind: lab
+  level: advanced
+  languages: [Dockerfile, Shell, Python, JavaScript]
+  platforms: [Linux, Docker, Docker Compose]
+  url: https://vulhub.org/zh
+  source_access: public
+  source_url: https://github.com/vulhub/vulhub
+  environment: [Linux, Docker Engine, Docker Compose, isolated local network]
+  verification: [build and start a selected vulnerable service with Docker Compose, reproduce the documented vulnerability locally, tear it down]
+  outputs: [reproducible vulnerable environments, exploit-analysis notes, mitigation records]
+  status: active
+  checked: 2026-08-19
+  safety_note: Only run vulnerable services in an isolated local lab and test targets with explicit authorization.
+
+- id: tryhackme
+  title: TryHackMe 网络安全实战平台
+  subject: security
+  institution: TryHackMe
+  kind: platform
+  level: intro
+  languages: [C, Python, JavaScript, Shell]
+  platforms: [Browser, Linux sandbox, VPN]
+  url: https://tryhackme.com
+  source_access: external-sandbox
+  environment: [TryHackMe browser rooms or authorized VPN lab, challenge-specific tools]
+  verification: [complete guided rooms and obtain the expected flags or task results]
+  outputs: [security walkthroughs, lab notes, challenge solutions]
+  status: active
+  checked: 2026-08-19
+  safety_note: Only use the supplied challenge platform, local targets or systems with explicit authorization.
+
+- id: hack-the-box
+  title: Hack The Box 实战平台
+  subject: security
+  institution: Hack The Box
+  kind: platform
+  level: advanced
+  languages: [C, Python, JavaScript, Assembly]
+  platforms: [Browser, Linux, VPN, isolated target network]
+  url: https://www.hackthebox.com
+  source_access: external-sandbox
+  environment: [Hack The Box Pwnbox or local VPN-connected lab, challenge-specific tools]
+  verification: [complete authorized machines, labs or challenges and submit flags/accepted proofs]
+  outputs: [penetration-testing notes, exploit-analysis reports, challenge solutions]
+  status: active
+  checked: 2026-08-19
+  safety_note: Only use the supplied challenge platform, local targets or systems with explicit authorization.
