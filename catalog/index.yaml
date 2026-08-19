@@ -183,38 +183,6 @@
   status: active
   checked: 2026-08-18
 
-- id: thu-tcp-lab
-  title: 清华 TCP 实验
-  subject: network
-  institution: Tsinghua University
-  kind: lab
-  level: advanced
-  languages: [C++]
-  platforms: [Linux, Wireshark]
-  url: https://lab.cs.tsinghua.edu.cn/tcp/doc/
-  source_access: course-provided
-  environment: [Linux, C++ toolchain, packet capture tool, course framework]
-  verification: [protocol tests, logs and packet traces]
-  outputs: [TCP stack, packet traces]
-  status: active
-  checked: 2026-08-18
-
-- id: thu-router-lab
-  title: 清华 Router Lab
-  subject: network
-  institution: Tsinghua University
-  kind: lab
-  level: advanced
-  languages: [C++, P4]
-  platforms: [Linux, IPv6, network emulator, hardware optional]
-  url: https://lab.cs.tsinghua.edu.cn/router/doc/
-  source_access: course-provided
-  environment: [Linux, C++ toolchain, course topology and test framework]
-  verification: [forwarding and routing protocol test cases, packet capture]
-  outputs: [software router, IPv6 routing functions, P4 data plane]
-  status: active
-  checked: 2026-08-18
-
 - id: ustc-network-course
   title: 中科大信息网络实验室课程资料
   subject: network
@@ -1177,38 +1145,6 @@
   status: active
   checked: 2026-08-18
 
-- id: nju-network-protocol-lab
-  title: 南京大学计算机网络协议开发实验
-  subject: network
-  institution: Nanjing University
-  kind: lab
-  level: advanced
-  languages: [C, Shell]
-  platforms: [Linux, TCP/IP, packet capture]
-  url: https://sbc.nju.edu.cn/syjxdg/jsjkxyjsx/20150127/i2273.html
-  source_access: course-provided
-  environment: [Linux C/S environment, C compiler, socket APIs, packet-sniffing tools]
-  verification: [complete application, transport, network and link-layer protocol exercises, then test the client-server programs]
-  outputs: [TCP/IP protocol components, socket programs, packet-analysis records]
-  status: archived
-  checked: 2026-08-18
-
-- id: sjtu-computer-networks
-  title: 上海交通大学 Computer Networks
-  subject: network
-  institution: Shanghai Jiao Tong University
-  kind: course
-  level: undergraduate
-  languages: [C, Python]
-  platforms: [Linux, TCP/IP, packet capture]
-  url: https://jhc.sjtu.edu.cn/courses/2021/1111/35.html
-  source_access: course-provided
-  environment: [Linux or course environment, socket programming toolchain, packet-analysis tools]
-  verification: [complete the course experiments and network-programming assignments, inspect protocol behavior]
-  outputs: [protocol analysis, network programming exercises and experiment reports]
-  status: archived
-  checked: 2026-08-18
-
 - id: cmu-15441-networking
   title: CMU 15-441/641 Networking and the Internet
   subject: network
@@ -1258,6 +1194,89 @@
   outputs: [routing algorithms, virtual network topologies, SDN firewall and BGP experiments]
   status: active
   checked: 2026-08-18
+
+- id: nju-network-exp-docs
+  title: 南京大学计算机网络实验文档
+  subject: network
+  institution: Nanjing University
+  kind: lab
+  level: undergraduate
+  languages: [C, Python, Shell]
+  platforms: [Linux, Mininet, Online Judge]
+  url: https://nasa.nju.edu.cn/tutorial/
+  source_access: public
+  source_url: https://git.nju.edu.cn/nju-network-course/network-exp-docs
+  environment: [Linux virtual machine, Mininet, C toolchain, course OJ]
+  verification: [complete the nine socket, transport, routing, switching and broadcast experiments and submit to the OJ]
+  outputs: [socket applications, TCP and reliable transport code, router, mOSPF and switch implementations]
+  status: active
+  checked: 2026-08-19
+
+- id: pku-cs144-zh
+  title: Stanford CS144 中文学习资料
+  subject: network
+  institution: PKUFlyingPig community
+  kind: tutorial
+  level: undergraduate
+  languages: [C++, Markdown]
+  platforms: [Linux, CMake, TCP/IP]
+  url: https://github.com/PKUFlyingPig/CS144-Computer-Network
+  source_access: public
+  source_url: https://github.com/PKUFlyingPig/CS144-Computer-Network
+  environment: [Linux, C++ toolchain, CMake, Stanford CS144 framework]
+  verification: [read the Chinese handouts, build the framework and complete the CS144 lab checkpoints]
+  outputs: [Chinese study notes, lab handouts, TCP stack and IP router exercises]
+  status: active
+  checked: 2026-08-19
+
+- id: uw-cse461
+  title: University of Washington CSE461 网络实验
+  subject: network
+  institution: University of Washington
+  kind: lab
+  level: undergraduate
+  languages: [C, Python, Shell]
+  platforms: [Linux VM, Multipass, Mininet, POX, Wireshark]
+  url: https://courses.cs.washington.edu/courses/cse461/26wi/
+  source_access: course-provided
+  environment: [Ubuntu VM or Multipass, Mininet, Open vSwitch, POX controller]
+  verification: [complete socket, HTTP proxy, SDN firewall, L3 router and TCP performance labs]
+  outputs: [socket programs, HTTP proxy, OpenFlow controller, IP router and performance reports]
+  status: active
+  checked: 2026-08-19
+
+- id: sc-cybertraining-network-labs
+  title: South Carolina Cybertraining 网络实验
+  subject: network
+  institution: University of South Carolina Cyberinfrastructure Lab
+  kind: lab
+  level: advanced
+  languages: [Python, P4, Shell]
+  platforms: [Linux, Mininet, FRRouting, BMv2, Open vSwitch, ONOS]
+  url: https://research.cec.sc.edu/cyberinfra/cybertraining
+  source_access: course-provided
+  environment: [Linux lab VM, Mininet, FRRouting, P4 BMv2 and Open vSwitch]
+  verification: [follow the lab manuals for IPv6, OSPF, BGP, P4, OVS, TCP performance and network management experiments]
+  outputs: [routing configurations, P4 programs, OVS flows, TCP measurements and network-operation reports]
+  status: active
+  checked: 2026-08-19
+
+- id: mininet-walkthrough
+  title: Mininet 官方网络仿真教程
+  subject: network
+  institution: Mininet Project
+  kind: tutorial
+  level: intro
+  languages: [Python, Shell]
+  platforms: [Linux, Mininet, Open vSwitch, OpenFlow]
+  url: https://mininet.org/walkthrough/
+  source_access: public
+  source_url: https://github.com/mininet/mininet
+  environment: [Linux, Mininet, Open vSwitch and network namespaces]
+  verification: [create virtual topologies, run pingall and iperf, inspect links and switches, and write Python topology scripts]
+  outputs: [network topology scripts, emulation logs and SDN prototypes]
+  status: active
+  checked: 2026-08-19
 
 - id: bugku-ctf
   title: Bugku CTF/AWD 实战平台

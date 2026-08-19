@@ -66,12 +66,10 @@
 
 ### 国内
 
-- [清华 TCP 实验](https://lab.cs.tsinghua.edu.cn/tcp/doc/)：实现 TCP 栈并抓包验证。
-- [清华 Router Lab](https://lab.cs.tsinghua.edu.cn/router/doc/)：软件路由、IPv6、路由协议与 P4。
+- [南京大学计算机网络实验文档](https://nasa.nju.edu.cn/tutorial/)：九个实验覆盖 Socket、TCP、路由、mOSPF、交换机与广播，并提供 OJ 评测。
+- [PKU CS144 中文学习资料](https://github.com/PKUFlyingPig/CS144-Computer-Network)：Stanford CS144 的中文笔记、实验说明与 TCP/IP 实现路线。
 - [中科大信息网络实验室](https://if.ustc.edu.cn/course/)：组网、网络命令与协议分析。
 - [清华 TanLabs](https://github.com/thu-cs-lab/tanlabs)：FPGA 转发引擎与 PCAP 测试。
-- [南京大学计算机网络协议开发实验](https://sbc.nju.edu.cn/syjxdg/jsjkxyjsx/20150127/i2273.html)：从应用层到链路层的协议开发。
-- [上海交通大学 Computer Networks](https://jhc.sjtu.edu.cn/courses/2021/1111/35.html)：协议原理、实验与网络编程。
 
 ### 国外
 
@@ -79,6 +77,9 @@
 - [CMU 15-441/641](https://computer-networks.github.io/fa22/)：Mixnet、TCP、HTTP 与抓包测试项目。
 - [ETH Zurich Mini-Internet](https://github.com/nsg-ethz/mini_internet_project)：容器化路由器、AS、BGP 与 IPv6 实验。
 - [Georgia Tech CS6250](https://omscs.gatech.edu/cs-6250-computer-networks)：Mininet、路由、SDN 防火墙与 BGP 实验。
+- [UW CSE461](https://courses.cs.washington.edu/courses/cse461/26wi/)：Socket、HTTP Proxy、Mininet、SDN 防火墙与 L3 路由实验。
+- [South Carolina Cybertraining](https://research.cec.sc.edu/cyberinfra/cybertraining)：IPv6、OSPF、BGP、P4、OVS、TCP 性能与网络管理实验。
+- [Mininet 官方 Walkthrough](https://mininet.org/walkthrough/)：从虚拟拓扑、链路测试到 OpenFlow/SDN 的入门教程。
 
 ## 数据库与分布式存储
 
